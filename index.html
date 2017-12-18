@@ -1,1 +1,167 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Viewport is set to the device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Portfolio Site</title>
+    <!-- Css file in the corresponding directory -->
+    <style>
+        @media (max-width: 412px) {
+	.projects-header {
+		font-size: 14pt;
+	}
+	.project-name {
+		font-size: 13pt;
+	}
+	.project-link {
+		font-size: 12pt;
+	}
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content:space-between;
+		flex-wrap: wrap;
+	}
+	.title-text {
+		font-size: 12pt;
+		width: 80%;
+		text-align: right;
+	}
+	.image {
+		width: 20%;
+		height: 30%;
+	}
+}
+@media (max-width: 300px) {
+	.title-text {
+		font-size: 10pt;
+	}
+	.projects-header {
+		font-size: 15pt;
+	}
+	.project-name {
+		font-size: 10pt;
+	}
+	.project-link {
+		font-size: 10pt;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+ @media (min-width: 413px) {
+	.title-text {
+		font-size: 20pt;
+		color: #2d3c49;
+		text-align:right;
+	}
+	.projects-header {
+		font-size: 30pt;
+	}
+	.project-name {
+		font-size: 21pt;
+	}
+	.project-link {
+		font-size: 19pt;
+	}
+}
+.title_text {
+	color: #2d3c49;
+	width:70%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin-right: 10px;
+}
+.image {
+	width: 20%;
+}
+.container {
+	width: 100%;
+	display:flex;	
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.project {
+	width:32%;
+	text-align:center;
+}
+.projects-header {
+	color: #7d97ad;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.project-name {
+	color: #2d3c49;
+	text-align: center;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.project-link {
+	color: #2d3c49;
+	text-align: center;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+a {
+	color: #2d3c49;
+	text-decoration: none;
+	text-align: center;
+}
+hr {
+	border: 0;
+	clear:both;
+	width: 96%;               
+	background-color:#2d3c49;;
+	height: 3px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Head elements section -->
+    <header>
+        <div class="container">
+            <div class="image">
+                <img src="https://blog.udacity.com/wp-content/themes/udacity_wp_1_8/images/udacity_mark.png" width="100%" height="100%" alt="Udacity Icon" />
+            </div>
+
+            <div class="title-text">
+                <h2 id="name">Assiya Khuzyakhmetova</h2>
+                <h3 id="sub-heading">Full Stack Web Developer</h3>
+            </div>
+        </div>
+        <!--Required by the PDF template line -->
+        <hr>
+    </header>
+    <!--Image of HTML code for decoration-->
+    <figure>
+        <div class="picture">
+            <img src="https://activerain-store.s3.amazonaws.com/image_store/uploads/9/1/7/5/1/ar12404096215719.jpg" alt="The HTML code" width="100%">
+        </div>
+    </figure>
+
+    <!-- Projects list -->
+    <main id="projects-list">
+        <h2 class="projects-header">Featured Work</h2>
+        <article>
+            <div class="container">
+                <div class="project">
+                    <img src="https://vignette2.wikia.nocookie.net/ideas/images/e/e4/Movie_night.jpg/revision/latest?cb=20141222232947" alt="The First project" width="90%">
+                    <h2 class="project-name"> Movie Website</h2>
+                    <p class="project-link"> <a href="https://github.com/rhcu/Movie-Trailer-Website-Project" target="_blank">Link to Github </a>
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/n17r-2017.appspot.com/o/images%2Fweb_hi_res_512-1502269012304.png?alt=media&token=2f546549-4f80-4218-bf9d-f39ce1a164d0" alt="The second project" width="85%" >
+                    <h1 class="project-name"> 21 Steps App </h1>
+                    <p class="project-link"><a href="http://bit.ly/2wNZ8Tq" target="_blank">Link to Github</a>
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmjZPX1CSauHh7J6feB9rO-TFVVvqKVNEJK6NzNPHCqg0FMGu4nA" alt="The third project" width="85%">
+                    <h2 class="project-name"> Photo Gallery</h2>
+                    <p class="project-link"><a href="https://github.com/rhcu/django_PhotoGallery" target="_blank">Link to Github</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
